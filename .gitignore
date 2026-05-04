@@ -1,0 +1,72 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+ENV/
+.env
+.env.*
+!.env.example
+
+# --- テスト・カバレッジ ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- IDE / エディタ ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- このプロジェクト: 生成物（Run ごとの台本・OCR 等） ---
+Output/
+output/
+
+# 入力漫画画像（リポジトリには含めない）
+Input/Image/**/*.png
+Input/Image/**/*.jpg
+Input/Image/**/*.jpeg
+Input/Image/**/*.webp
+input/image/**/*.png
+input/image/**/*.jpg
+input/image/**/*.jpeg
+input/image/**/*.webp
+
+# mokuro が Input 直下に残した場合の退避漏れ
+Input/Image.mokuro
+Input/Image.html
+Input/_ocr/
+input/Image.mokuro
+input/Image.html
+input/_ocr/
+
+# --- Claude / Cursor ローカル設定 ---
+.claude/settings.local.json
